@@ -1,4 +1,4 @@
-package onjava.range;
+package range;
 
 public class Range {
   // Produce sequence [start..end) incrementing by step

@@ -1,7 +1,6 @@
-package onjava.range;
+package range;
 
-
-import static onjava.range.Range.range;
+import static range.Range.range;
 
 public class BreakAndContinue {
   public static void main(String[] args) {
