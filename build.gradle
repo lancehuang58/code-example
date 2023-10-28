@@ -6,12 +6,11 @@
  * User Manual available at https://docs.gradle.org/6.4.1/userguide/java_library_plugin.html
  */
 
-plugins{
+plugins {
     id 'java'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+
 
 group 'com.deltaww'
 
@@ -22,6 +21,13 @@ repositories {
 }
 
 dependencies {
+    testImplementation 'org.mockito:mockito-core:5.2.0'
+    testImplementation 'org.mockito:mockito-inline:5.2.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 
