@@ -9,3 +9,5 @@ gradlew
 gradlew.bat
 .gitattributes
 out
+gradle.properties
+.vscode
