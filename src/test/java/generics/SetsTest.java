@@ -19,5 +19,11 @@ class SetsTest {
         assertThat(set).containsExactlyInAnyOrder("A", "B");
     }
 
-
+    @Test
+    void test_intersection() {
+        Set<String> a = Set.of("A", "B", "C");
+        Set<String> b = Set.of("D", "B", "C");
+        Set<String> set = Sets.intersection(a, b);
+        assertThat(set).containsExactlyInAnyOrder("C", "B");
+    }
 }

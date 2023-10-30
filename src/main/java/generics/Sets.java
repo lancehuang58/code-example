@@ -10,4 +10,10 @@ public class Sets {
         t.addAll(b);
         return t;
     }
+
+    public static <T> Set<T> intersection(Set<T> a, Set<T> b) {
+        var t = new HashSet<>(a);
+        t.retainAll(b);
+        return t;
+    }
 }
