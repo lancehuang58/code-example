@@ -16,4 +16,14 @@ public class Sets {
         t.retainAll(b);
         return t;
     }
+
+    public static <T> Set<T> difference(Set<T> superset, Set<T> subset) {
+        Set<T> t = new HashSet<>(superset);
+        t.removeAll(subset);
+        return t;
+    }
+
+    public static <T> Set<T> complement(Set<T> a, Set<T> b) {
+        return difference(union(a, b), intersection(a, b));
+    }
 }
