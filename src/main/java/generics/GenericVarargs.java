@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class GenericVarargs {
+    @SafeVarargs
     public static <T> List<T> makeList(T... args) {
         return Arrays.stream(args).collect(Collectors.toList());
     }

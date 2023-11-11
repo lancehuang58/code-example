@@ -68,7 +68,8 @@ public class ThrowGenericException {
             runner.add(new Processor1());
         }
         try {
-            runner.processAll();
+            List<String> strings = runner.processAll();
+            System.out.println(strings);
         } catch (Failure1 failure1) {
             System.err.println(failure1.getMessage());
         }

@@ -15,7 +15,7 @@ public class Holder <T>{
 
     @Override
     public boolean equals(Object obj) {
-        return obj instanceof Holder<?> && Objects.equals(a, ((Holder)obj).a);
+        return obj instanceof Holder<?> && Objects.equals(a, ((Holder<?>)obj).a);
     }
 
     @Override

@@ -49,7 +49,7 @@ public class GenericReading {
 
         CovariantReader<Apple> appleCovariantReader = new CovariantReader<>();
         Apple apple = appleCovariantReader.readCovariant(apples);
-
+        System.out.println(apple);
 //        appleCovariantReader.readCovariant(fruits); won't work
     }
 
